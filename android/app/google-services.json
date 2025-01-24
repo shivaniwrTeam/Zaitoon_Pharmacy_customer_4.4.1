@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "915333937006",
+    "project_id": "zaitoon-44f50",
+    "storage_bucket": "zaitoon-44f50.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:915333937006:android:3de12a122f418f2b3db37f",
+        "android_client_info": {
+          "package_name": "com.zaitoonpharmacy.customer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "915333937006-7mhd9pvte078u8u8oom2tcc8s33bna9u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.zaitoonpharmacy.customer",
+            "certificate_hash": "4cd56deeeb4613231f689af5e46f5e76e2ec2da2"
+          }
+        },
+        {
+          "client_id": "915333937006-shs4fih9a2ts88ohdcjt6jr64nugmg99.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFkUYOiZfY9jj3Y1MK5HSUJpaC9hy760Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "915333937006-shs4fih9a2ts88ohdcjt6jr64nugmg99.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "915333937006-nls5f6rhqnam3o3pjvrraqd9am3g76tq.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.zaitoonpharmacy.customer"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
