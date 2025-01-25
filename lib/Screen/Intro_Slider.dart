@@ -56,7 +56,7 @@ class _GettingStartedScreenState extends State<IntroSlider>
       vsync: this,
     );
     buttonSqueezeanimation = Tween(
-      begin: deviceWidth! * 0.9,
+      begin: deviceWidth! * 0.8,
       end: 50.0,
     ).animate(
       CurvedAnimation(

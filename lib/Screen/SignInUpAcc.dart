@@ -21,17 +21,21 @@ class _SignInUpAccState extends State<SignInUpAcc>
   void initState() {
     super.initState();
     buttonController = AnimationController(
-        duration: const Duration(milliseconds: 2000), vsync: this,);
+      duration: const Duration(milliseconds: 2000),
+      vsync: this,
+    );
     buttonSqueezeanimation = Tween(
-      begin: deviceWidth! * 0.9,
+      begin: deviceWidth! * 0.8,
       end: 50.0,
-    ).animate(CurvedAnimation(
-      parent: buttonController!,
-      curve: const Interval(
-        0.0,
-        0.150,
+    ).animate(
+      CurvedAnimation(
+        parent: buttonController!,
+        curve: const Interval(
+          0.0,
+          0.150,
+        ),
       ),
-    ),);
+    );
   }
 
   @override
@@ -42,12 +46,15 @@ class _SignInUpAccState extends State<SignInUpAcc>
 
   _subLogo() {
     return Padding(
-        padding: const EdgeInsetsDirectional.only(top: 30.0),
-        child: SvgPicture.asset(
-          'assets/images/homelogo.svg',
-          colorFilter: ColorFilter.mode(
-              Theme.of(context).colorScheme.primarytheme, BlendMode.srcIn,),
-        ),);
+      padding: const EdgeInsetsDirectional.only(top: 30.0),
+      child: SvgPicture.asset(
+        'assets/images/homelogo.svg',
+        colorFilter: ColorFilter.mode(
+          Theme.of(context).colorScheme.primarytheme,
+          BlendMode.srcIn,
+        ),
+      ),
+    );
   }
 
   welcomeEshopTxt() {
@@ -56,9 +63,10 @@ class _SignInUpAccState extends State<SignInUpAcc>
       child: Text(
         getTranslated(context, 'WELCOME_ESHOP')!,
         style: Theme.of(context).textTheme.titleMedium!.copyWith(
-            color: Theme.of(context).colorScheme.fontColor,
-            fontWeight: FontWeight.bold,
-            fontSize: 22,),
+              color: Theme.of(context).colorScheme.fontColor,
+              fontWeight: FontWeight.bold,
+              fontSize: 22,
+            ),
       ),
     );
   }
@@ -71,8 +79,9 @@ class _SignInUpAccState extends State<SignInUpAcc>
       child: Text(
         getTranslated(context, 'ECOMMERCE_APP_FOR_ALL_BUSINESS')!,
         style: Theme.of(context).textTheme.titleSmall!.copyWith(
-            color: Theme.of(context).colorScheme.secondaryFontColor,
-            fontWeight: FontWeight.normal,),
+              color: Theme.of(context).colorScheme.secondaryFontColor,
+              fontWeight: FontWeight.normal,
+            ),
       ),
     );
   }
@@ -85,8 +94,9 @@ class _SignInUpAccState extends State<SignInUpAcc>
       child: Text(
         getTranslated(context, 'SIGNIN_ACC_LBL')!,
         style: Theme.of(context).textTheme.titleMedium!.copyWith(
-            color: Theme.of(context).colorScheme.fontColor,
-            fontWeight: FontWeight.bold,),
+              color: Theme.of(context).colorScheme.fontColor,
+              fontWeight: FontWeight.bold,
+            ),
       ),
     );
   }
@@ -97,8 +107,11 @@ class _SignInUpAccState extends State<SignInUpAcc>
       btnAnim: buttonSqueezeanimation,
       btnCntrl: buttonController,
       onBtnSelected: () async {
-        Navigator.pushNamed(context, Routers.loginScreen,
-            arguments: {"isPop": false},);
+        Navigator.pushNamed(
+          context,
+          Routers.loginScreen,
+          arguments: {"isPop": false},
+        );
       },
     );
   }
@@ -110,8 +123,11 @@ class _SignInUpAccState extends State<SignInUpAcc>
       btnAnim: buttonSqueezeanimation,
       btnCntrl: buttonController,
       onBtnSelected: () async {
-        Navigator.pushNamed(context, Routers.sendOTPScreen,
-            arguments: {"title": getTranslated(context, 'SEND_OTP_TITLE')},);
+        Navigator.pushNamed(
+          context,
+          Routers.sendOTPScreen,
+          arguments: {"title": getTranslated(context, 'SEND_OTP_TITLE')},
+        );
       },
     );
   }
