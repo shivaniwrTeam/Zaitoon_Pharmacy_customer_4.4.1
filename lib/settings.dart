@@ -22,9 +22,9 @@ class AppSettings {
 
   // API configuration: Update with your server URL and client-specific details
   static const String baseUrl =
-      'https://zaitoonpharmacy-com-641739.hostingersite.com/app/v1/api/'; // Base API endpoint
+      'https://zaitoonpharmacy.com/app/v1/api/'; // Base API endpoint
   static const String chatBaseUrl =
-      "https://zaitoonpharmacy-com-641739.hostingersite.com/app/v1/Chat_Api/"; // Chat-specific API endpoint
+      "https://zaitoonpharmacy.com/app/v1/Chat_Api/"; // Chat-specific API endpoint
 
   // Deep linking configuration
   static const String deepLinkUrlPrefix =
