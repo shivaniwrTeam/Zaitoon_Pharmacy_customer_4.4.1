@@ -109,20 +109,22 @@ class _GettingStartedScreenState extends State<IntroSlider>
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
                       SizedBox(
-                        height: MediaQuery.of(context).size.height * .5,
+                        height: MediaQuery.of(context).size.height * .47,
                         child: SvgPicture.asset(
                           slideList[index].imageUrl,
                         ),
                       ),
                       Container(
-                        margin: const EdgeInsetsDirectional.only(top: 15),
+                        margin: const EdgeInsetsDirectional.only(top: 10),
                         child: Text(
                           slideList[index].title,
+                          textAlign: TextAlign.center,
                           style: Theme.of(context)
                               .textTheme
                               .headlineSmall!
                               .copyWith(
-                                color: Theme.of(context).colorScheme.fontColor,
+                                color:
+                                    Theme.of(context).colorScheme.primarytheme,
                                 fontWeight: FontWeight.bold,
                               ),
                         ),
@@ -258,7 +260,7 @@ class _GettingStartedScreenState extends State<IntroSlider>
             ),
           )
         : Container(
-            margin: const EdgeInsetsDirectional.only(top: 50.0),
+            margin: const EdgeInsetsDirectional.only(top: 20.0),
             height: 15,
           );
   }

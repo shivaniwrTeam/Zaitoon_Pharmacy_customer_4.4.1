@@ -37,12 +37,12 @@
   "SPECIFICATION": "Specifications",
   "DISCOUPON": "Discounts & Coupons",
   "COMINGSOON": "Coming soon..",
-  "TITLE1_LBL": "Search Items",
-  "TITLE2_LBL": "Order it",
-  "TITLE3_LBL": "You Got it",
-  "DISCRIPTION1": "Search millions of items you want very easily",
-  "DISCRIPTION2": "We're the Zaitoon Pharmacy and here to make your life easier. Just relax and let's get started",
-  "DISCRIPTION3": "Special for you. Free delivered fees for many cities.",
+  "TITLE1_LBL": "Welcome to \nZaitoon!",
+  "TITLE2_LBL": "Quick Doorstep \nDelivery.",
+  "TITLE3_LBL": "Save on \nHealthcare!",
+  "DISCRIPTION1": "Your Trusted Online Pharmacy for All Health Needs!",
+  "DISCRIPTION2": "Fast, Safe, and Reliable Delivery for All Orders.",
+  "DISCRIPTION3": "Enjoy Great Discounts & Deals on Your Purchases!",
   "GET_STARTED": "Get Started",
   "WELCOME_ESHOP": "Welcome to Zaitoon Pharmacy",
   "ECOMMERCE_APP_FOR_ALL_BUSINESS": "The eCommerce app for all business",
@@ -474,5 +474,5 @@
   "FILE_DOWNLOAD_PROGRESS": "File Downloading In Progress",
   "FILE_DOWNLOAD_SUCCESS": "File Downloaded Successfully",
   "NO_PRODUCTS_WITH_YOUR_LINK_FOUND": "No Product Found With Your Link",
-  "CANT_INCREASE_QNT_AFTER_ADD_IN_CART":"Quantity cannot be increased once the item is in the cart."
+  "CANT_INCREASE_QNT_AFTER_ADD_IN_CART": "Quantity cannot be increased once the item is in the cart."
 }

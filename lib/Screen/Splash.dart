@@ -35,8 +35,10 @@ class _SplashScreen extends State<Splash> {
   @override
   void initState() {
     super.initState();
-    SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual,
-        overlays: [SystemUiOverlay.top],);
+    SystemChrome.setEnabledSystemUIMode(
+      SystemUiMode.manual,
+      overlays: [SystemUiOverlay.top],
+    );
     SystemChrome.setSystemUIOverlayStyle(
       const SystemUiOverlayStyle(
         statusBarColor: Colors.transparent,
@@ -59,7 +61,8 @@ class _SplashScreen extends State<Splash> {
       (token) async {
         final SettingProvider settingsProvider =
             Provider.of<SettingProvider>(context, listen: false);
-        final String getToken = await settingsProvider.getPrefrence(FCMTOKEN) ?? '';
+        final String getToken =
+            await settingsProvider.getPrefrence(FCMTOKEN) ?? '';
         print("fcm token****$token");
         if (token != getToken && token != null) {
           print("register token***$token");
@@ -103,7 +106,11 @@ class _SplashScreen extends State<Splash> {
             color: Theme.of(context).colorScheme.primarytheme,
             child: Center(
               child: SvgPicture.asset(
-                'assets/images/splashlogo_light.svg',
+                'assets/images/splashlogo_white.svg',
+                colorFilter: const ColorFilter.mode(
+                  colors.whiteTemp,
+                  BlendMode.srcIn,
+                ),
               ),
             ),
           ),
@@ -126,7 +133,8 @@ class _SplashScreen extends State<Splash> {
   Future<void> navigationPage() async {
     final SettingProvider settingsProvider =
         Provider.of<SettingProvider>(context, listen: false);
-    final bool isFirstTime = await settingsProvider.getPrefrenceBool(ISFIRSTTIME);
+    final bool isFirstTime =
+        await settingsProvider.getPrefrenceBool(ISFIRSTTIME);
     if (isFirstTime) {
       setState(() {
         from = true;
@@ -143,8 +151,10 @@ class _SplashScreen extends State<Splash> {
   @override
   void dispose() {
     if (from) {
-      SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual,
-          overlays: [SystemUiOverlay.bottom, SystemUiOverlay.top],);
+      SystemChrome.setEnabledSystemUIMode(
+        SystemUiMode.manual,
+        overlays: [SystemUiOverlay.bottom, SystemUiOverlay.top],
+      );
     }
     super.dispose();
   }
